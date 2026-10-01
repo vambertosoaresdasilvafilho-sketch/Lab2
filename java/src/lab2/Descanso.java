@@ -4,18 +4,23 @@ public class Descanso {
     private int horasDescanso;
     private int numerosSemana;
 
-    public Descanso(){}
+    public Descanso(){
+        horasDescanso = 0;
+        numerosSemana = 0;
+    }
 
     public void defineHorasDescanso(int ndescanso){
         horasDescanso = ndescanso;
     }
 
-    public void defineNUmeroSemanas(int valor){
+    public void defineNumeroSemanas(int valor){
         numerosSemana = valor;
     }
 
-    public String getStatusgeral(){
-        if (horasDescanso / numerosSemana >= 26 ) return "Estou Descansado";
-        return "Estou Cansado";
+
+    public String getStatusGeral(){
+        if (numerosSemana == 0) return "cansado";
+        if (horasDescanso / numerosSemana >= 26 ) return "descansado";
+        return "cansado";
     }
 }

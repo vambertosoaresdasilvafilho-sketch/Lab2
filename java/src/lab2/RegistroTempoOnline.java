@@ -27,13 +27,17 @@ public class RegistroTempoOnline {
     }
 
     public String toString(){
-        return nomedaDisciplina + " ja usado "
-                + tempoInvestido + " horas "
-                + "e a disciplina pede " +
-                tempoOnlineEsperado + " horas";
+        return nomedaDisciplina + " "
+                + tempoInvestido + "/" +
+                tempoOnlineEsperado;
     }
 
-
+    public boolean atingiuMetaTempoOnline(){
+        if (tempoOnlineEsperado <= tempoInvestido){
+            return true;
+        }
+        return false;
+    }
 
 
 

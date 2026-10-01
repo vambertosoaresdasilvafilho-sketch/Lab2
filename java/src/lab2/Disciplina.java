@@ -1,3 +1,5 @@
+package lab2;
+
 public class Disciplina {
     private String nomeDisciplina;
     private int horasEstudo;
@@ -14,7 +16,7 @@ public class Disciplina {
     }
 
     public void cadastraNota(int nota, double valorNota){
-        notas[nota] = valorNota;
+        notas[nota-1] = valorNota;
     }
 
     public boolean aprovado(){

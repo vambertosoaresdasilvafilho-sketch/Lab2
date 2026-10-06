@@ -1,7 +1,4 @@
 package lab2;
-import java.util.HashMap;
-import java.util.Map;
-
 
 public class RegistroResumos {
     private String[] tema;
@@ -9,6 +6,7 @@ public class RegistroResumos {
     private int ponteiro;
     private int limite;
     private int quantidade;
+
     public RegistroResumos(int nresumos){
         resumo = new String[nresumos];
         tema = new String[nresumos];
